@@ -1,0 +1,121 @@
+
+        /* CSS code here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .approved {
+            background-color: #28a745;
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .pending {
+            background-color: #ffc107;
+            color: black;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .rejected {
+            background-color: #dc3545;
+            color: white;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            opacity: 0.8; /* Adjusted for consistency with .btn:hover */
+        }
+
+        .action-buttons {
+            display: flex;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 8px; /* Adds space between buttons */
+            transition: opacity 0.3s ease;
+            width: 100px; /* Tetapkan saiz butang */
+            height: 40px;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .approve {
+            background-color: #28a745; /* Green */
+            color: white;
+        }
+
+        .reject {
+            background-color: #dc3545; /* Red */
+            color: white;
+        }
+
+        /* Responsiveness */
+        @media screen and (max-width: 600px) {
+            table {
+                width: 100%;
+                display: block;
+                overflow-x: auto;
+            }
+
+            th, td {
+                padding: 8px;
+            }
+        }
+
+        /* Set lebar maksimum untuk column "Aksi" */
+        td:last-child {
+            width: 50px;
+        }
+

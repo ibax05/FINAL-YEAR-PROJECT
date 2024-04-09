@@ -1,0 +1,81 @@
+body {
+    background-color: #f8f9fa; /* Membuat latar belakang lebih cerah untuk kenyamanan membaca */
+}
+
+.container {
+    padding-top: 100px; /* Memberikan jarak atas yang cukup tanpa terlalu jauh */
+}
+
+h2 {
+    
+    text-align: center;
+    padding: 20px 0; /* Memberikan padding yang lebih simetris */
+    margin: 20px 0 50px 0; /* Mengurangi margin untuk lebih efisien */
+    border-radius: 5px; /* Mengurangi radius untuk tampilan yang lebih modern */
+    color: #333; /* Warna gelap untuk kontras yang lebih baik */
+    background-color: #eee; /* Latar belakang ringan untuk judul */
+}
+
+
+
+
+
+ td {
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+
+th{
+    border: 1px solid #dee2e6;
+    text-align: center;
+
+}
+
+th.th-tarikh {
+    width:20%; 
+    
+   }
+
+   th.th-Id {
+    width:10%; 
+    
+    
+   }
+   
+     th.th-tujuan {
+       width:55%;
+     }
+     
+   th.th-status {
+     width: 7%;
+   }
+
+   th.th-aksi {
+    width: 50%;
+  }
+
+  td i {
+    margin-right: 10px; /* Menambahkan ruang antara ikon-ikon */
+
+}
+
+/* Icon hover styles */
+td i:hover {
+    color: orange; /* Ubah warna ikon saat dihover */
+    cursor: pointer; /* Ubah kursor menjadi ikon tangan saat dihover */
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto; /* Menambahkan scroll horizontal pada tabel di perangkat kecil */
+    }
+}

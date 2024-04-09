@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+table {
+    width: 90%; /* Mengurangkan lebar table */
+    margin: 0 auto; /* Memusatkan table ke tengah halaman */
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px; /* Menambah border-radius untuk penampilan yang lebih lembut */
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        width: auto; /* Remove the width constraint */
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+
+table button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px; /* Ubah padding untuk penampilan yang lebih kompak */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+table button:hover {
+    background-color: #0056b3;
+}
+
+
+th:nth-child(3),
+td:nth-child(3) {
+
+  position: relative;
+  right: 0;
+  padding-right: 50px; 
+  
+
+}
+
+
+
+
+    </style>
+
+
+
+    <title>Dashboard | Admin</title>
+</head>
+
+<body id="body-pd">
+    <div class="l-navbar" id="navbar">
+        <nav class="nav">
+            <div>
+                <div class="nav__brand">
+                    <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                    <a href="#" class="nav__logo">Admin</a>
+                </div>
+                <div class="nav__list">
+                    <a href="#" class="nav__link">
+                        <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Rumah</span>
+                    </a>
+                    <a href="#" class=" nav__link active">
+                        <ion-icon name="newspaper-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Senarai Permohon</span>
+                    </a>
+
+
+                    <div class="nav__link collapse">
+                        <ion-icon name="hourglass-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Status Permohon</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="nav__link">
+                <ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+                <span class="nav__name">Keluar</span>
+            </a>
+        </nav>
+    </div>
+    <h1>Senarai Pemohon</h1>
+    <table id="senaraiPemohon">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nama Pegawai</th>
+                <th>Jawatan</th>
+                <th>Borang</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Contoh Data PHP -->
+
+
+           
+                      <tr>
+                        
+                        <td>123</td>
+                        <td>Ibad</td>
+                        <td>{$p['jawatan']}</td>
+                        <td><button >Borang</button></td>
+                      </tr>
+            
+        </tbody>
+    </table>
+
+
+
+<!-- ===== IONICONS ===== -->
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+<!-- ===== MAIN JS ===== -->
+<script src="js/main.js"></script>
+</body>
+
+</html>

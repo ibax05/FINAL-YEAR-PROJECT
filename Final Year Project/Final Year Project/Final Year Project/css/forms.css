@@ -1,0 +1,696 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+  }
+
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.offcanvas-footer {
+    margin-top: auto;
+}
+
+
+
+h2 {
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 50px;
+    
+}
+
+.container {
+  display: flex;  
+  flex-direction: column;
+}
+
+.tajuk-Memo
+{
+
+    padding-bottom: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.mandatory {
+    color: red;
+    font-size: 20px;
+  }
+
+
+
+  .side-nav {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .tajuk-Agenda-Mesyuarat {
+
+    margin-left: 6px;
+    border-bottom: 3px solid #000;
+    display: inline-block;
+    text-align: start;  
+  }
+
+
+.tajuk-Informasi-Pegawai {
+
+  margin-left: 6px;
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  text-align: start;  
+}
+
+
+.tajuk-Pengurusi-Mesyuarat
+{
+
+  margin-left: 6px;
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  text-align: start; 
+}
+
+.tajuk-Jenis-Mesyuarat
+  {
+
+    margin-left: 6px;
+    border-bottom: 3px solid #000;
+    display: inline-block;
+    text-align: start; 
+   }
+
+.tajuk-Makan-Minum
+{
+
+  margin-left: 6px;
+  margin-bottom: 90px;
+  border-bottom: 3px solid #000;
+  display: inline-block;
+  text-align: start; 
+
+}
+
+
+
+
+
+.kadar-makan-minum h6
+{
+
+    margin: 20px 70px 5px 387px;
+
+}
+
+
+
+
+.Agenda-Mesyuarat {
+    max-width: 800px; 
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 100px;
+  }
+
+.Agenda-Mesyuarat div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+
+}
+
+.Agenda-Mesyuarat label {
+    
+    flex-basis: 30%;
+    padding-right: 10px;
+    
+}
+
+.Agenda-Mesyuarat input {
+    flex-basis: 90%;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+
+/***** DEV UNTUK INFORMASI PEGAWAI *****/
+
+.Pegawai-pemohon {
+    max-width: 800px; 
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 100px;
+  }
+    
+  
+
+  .Pegawai-pemohon div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+
+}
+
+
+
+.Pegawai-pemohon label {
+    
+    flex-basis: 30%;
+    padding-right: 10px;
+    
+}
+
+.Pegawai-pemohon select {
+  flex-basis: 90%;
+  padding: 7px 5px 7px 5px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+
+.Pegawai-pemohon input {
+    flex-basis: 90%;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+}
+
+/***** DEV UNTUK Pengerusi Mesyuarat *****/
+
+.row {
+    display: flex; 
+  }
+  
+  .row div {
+    flex: 1; /* same width */
+  } 
+  
+  
+
+.Pengerusi-Mesyuarat {  
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    
+  }
+  
+  .Pengerusi-Mesyuarat div {
+    margin-bottom: 12px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .Pengerusi-Mesyuarat input[type=checkbox] {
+    flex-basis: 30%;
+    transform: scale(1.3); 
+    height: 20px;
+    width: 90px;
+    
+
+  }
+
+  .Pengerusi-Mesyuarat label {
+    flex-basis: 90%;
+    cursor: pointer;
+  }
+
+  .Pengerusi-Mesyuarat input[type=text] {
+    flex-basis: 100%;
+    margin-right: 26px;
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+  /***** DEV UNTUK Pengerusi Mesyuarat(kadar makan & minum) *****/
+
+
+  .kadar-makan-minum {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  
+  .tajuk-kadar-makan-minum {
+    text-align: left;  
+  }
+  
+  .image-kadar-makan-minum {
+    text-align: center;
+  }
+  
+  .note-kadar-makan-minum {
+    text-align: left; 
+    color: red;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+  /***** DEV UNTUK Jenis Mesyuarat(kadar makan & minum) *****/
+
+
+  
+
+  .Jenis-Mesyuarat
+
+  {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 100px;
+  }
+
+
+  .Jenis-Mesyuarat div {
+    margin-bottom: 12px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .Jenis-Mesyuarat input[type=checkbox] {
+    flex-basis: 30%;
+    transform: scale(1.3); 
+    height: 20px;
+    width: 90px;
+    
+
+  }
+
+  .Jenis-Mesyuarat label {
+    flex-basis: 90%;
+    cursor: pointer;
+  }
+
+  .Jenis-Mesyuarat input[type=text] {
+    flex-basis: 100%;
+    margin-right: 26px;
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+  /***** DEV UNTUK Makan/Minum  *****/
+
+
+  .menu {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+  }
+  
+  .menu table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    table-layout: fixed; /* Tambahkan baris ini */
+  }
+  
+  .menu th,
+  .menu td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .menu th {
+    background-color: #f2f2f2;
+  }
+  
+  .menu ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .menu .checkbox-cell {
+    text-align: center;
+  }
+  
+  .menu .checkbox-cell label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 0;
+    cursor: pointer;
+  }
+  
+  .menu .checkbox-cell input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .menu .checkbox-cell .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 3px;
+  }
+  
+  .menu .checkbox-cell input[type="checkbox"]:checked ~ .checkmark {
+    background-color: #2196f3;
+  }
+  
+  .menu .checkbox-cell .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .menu .checkbox-cell input[type="checkbox"]:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .menu .checkbox-cell .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  .menu th:nth-child(1), /* Kolom pertama */
+.menu td:nth-child(1) {
+  width: 20%; /* Sesuaikan lebar sesuai kebutuhan */
+}
+
+.menu th:nth-child(2), /* Kolom kedua */
+.menu td:nth-child(2) {
+  width: 30%; /* Sesuaikan lebar sesuai kebutuhan */
+}
+
+.menu th:nth-child(3), /* Kolom ketiga */
+.menu td:nth-child(3) {
+  width: 30%; /* Sesuaikan lebar sesuai kebutuhan */
+}
+
+
+
+
+
+  .Makan-Minum3
+
+  {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+  }
+
+
+
+  .Makan-Minum3 div {
+    margin-bottom: 12px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .Makan-Minum3 input[type=checkbox] {
+    flex-basis: 30%;
+    transform: scale(1.3); 
+    height: 20px;
+    width: 90px;
+    
+
+  }
+
+  .Makan-Minum3 label {
+    flex-basis: 90%;
+    cursor: pointer;
+  }
+
+  .Makan-Minum3 input[type=text] {
+    flex-basis: 100%;
+    margin-right: 26px;
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+  
+
+
+  
+
+
+
+  .Makan-Minum4
+
+  {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+  }
+
+
+
+  .Makan-Minum4 div {
+    margin-bottom: 12px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .Makan-Minum4 input[type=checkbox] {
+    flex-basis: 30%;
+    transform: scale(1.3); 
+    height: 20px;
+    width: 90px;
+    
+
+  }
+
+  .Makan-Minum4 label {
+    flex-basis: 90%;
+    cursor: pointer;
+  }
+
+  .Makan-Minum4 input[type=text] {
+    flex-basis: 50%;
+    margin-right: 26px;
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+
+
+
+
+  .Makan-Minum5
+
+  {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+  }
+
+
+
+  .Makan-Minum5 div {
+    margin-bottom: 12px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .Makan-Minum5 input[type=checkbox] {
+    flex-basis: 30%;
+    transform: scale(1.3); 
+    height: 20px;
+    width: 90px;
+    
+
+  }
+
+  .Makan-Minum5 label {
+    flex-basis: 90%;
+    cursor: pointer;
+  }
+
+  .Makan-Minum5 input[type=text] {
+    flex-basis: 100%;
+    margin-right: 26px;
+    padding: 2px;
+    border-radius: 5px;
+  }
+
+  .Upload-Memo
+  {
+    max-width: 700px; 
+    margin: 20px auto;
+    padding: 30px 30px 30px 50px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+
+  #drop-area{
+
+    width: 500px;
+    height: 400px;
+    padding: 30px 30px 30px 100px;
+    background: #fff;
+    text-align: center;
+    border-radius: 20px;
+
+  }
+
+
+  #img-view {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px dashed #bbb5ff;
+    background: #f7f8ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#img-view i {
+  color: #888;
+  margin-bottom: 10px;
+}
+
+#img-view > div {
+    width: 100%;
+    text-align: center;
+}
+
+
+#file-info {
+  padding-top: 10px;
+  text-align: center;
+  color: #666;
+}
+
+
+
+  
+
+
+
+  .submit-button {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+
+
+
+  button[type="submit"] {
+  
+    padding: 10px 30px;
+    border-radius: 4px;
+    
+    background: linear-gradient(to bottom, #378de5 5%, #79bbff 100%);  
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    
+    border: none;
+    font-size: 18px; 
+  }
+  
+  button[type="submit"]:hover {
+     opacity: 0.85;
+  }
+  
+  button[type="submit"]:active {
+    transform: scale(0.95);  
+  }
+
+
+  .memo-text{
+    text-align: center;
+    padding-top: 0px;
+    margin-bottom: 120px;
+    font-size: 20px;
+    color: red;
+  }
+
+  
+
+
+  
+
+ 
+
+  
+
+
+  
+
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+
+  
+
+
+  
+
+  
+
+
+  
+
+  
